@@ -1,0 +1,483 @@
+/* =====================
+   RESET & GLOBAL
+===================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* =====================
+   SIDEBAR
+===================== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100vh;
+    background: linear-gradient(180deg, #111, #1c1c1c);
+    color: #fff;
+    padding: 20px 15px;
+    z-index: 1000;
+}
+
+/* HEADER */
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar-header .avatar {
+    font-size: 42px;
+    margin-bottom: 6px;
+}
+
+.sidebar-header .title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+/* LINK */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ddd;
+    text-decoration: none;
+    margin: 6px 0;
+    padding: 10px 12px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    font-size: 14px;
+}
+
+/* ICON */
+.sidebar a .icon {
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
+}
+
+/* HOVER */
+.sidebar a:hover {
+    background: #2c2c2c;
+    color: #fff;
+}
+
+/* ACTIVE MENU */
+.sidebar a.active {
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
+}
+
+/* LOGOUT */
+.sidebar a.logout {
+    background: #2a2a2a;
+}
+
+.sidebar a.logout:hover {
+    background: #e11d48;
+}
+
+/* HR */
+.sidebar hr {
+    border: none;
+    height: 1px;
+    background: #333;
+    margin: 15px 0;
+}
+
+
+/* =====================
+   CONTENT AREA
+===================== */
+.content {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+/* =====================
+   CONTAINER & BOX
+===================== */
+.container,
+.box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    max-width: 600px;
+}
+
+/* =====================
+   ALERT
+===================== */
+.alert-success {
+    background: #e6fffa;
+    border-left: 6px solid #00b894;
+    color: #00695c;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.alert-error {
+    background: #ffe5e5;
+    color: #b30000;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* =====================
+   FORM CARD
+===================== */
+.form-card {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    max-width: 900px;
+}
+
+/* Form Title */
+.form-card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* =====================
+   FORM ELEMENT
+===================== */
+.form-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+    outline: none;
+    border-color: #b30000;
+}
+
+/* =====================
+   GRID FORM
+===================== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.form-grid label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-grid input,
+.form-grid select {
+    padding: 8px;
+}
+
+/* Full Width Field */
+.form-full {
+    grid-column: span 3;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.form-card button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #b30000, #000);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.form-card button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+/* =====================
+   RIWAYAT CARD & TABLE
+===================== */
+.riwayat-card {
+    background: #fff;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Table */
+.riwayat-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.riwayat-table th {
+    background: #f5f5f5;
+    text-align: left;
+    padding: 12px 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.riwayat-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+/* Hover row */
+.riwayat-table tbody tr:hover {
+    background: #fafafa;
+}
+
+/* =====================
+   STATUS BADGE
+===================== */
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Status Colors */
+.status.ajukan {
+    background: #f39c12; /* orange */
+}
+
+.status.disetujui {
+    background: #27ae60; /* green */
+}
+
+.status.ditolak {
+    background: #c62828; /* red */
+}
+
+.status.selesai {
+    background-color: #0d6efd; /* biru */
+}
+
+.btn-approve {
+    background: green;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-reject {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* =====================
+   FORM STOK ADMIN
+===================== */
+.stok-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.stok-input {
+    width: 70px;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+.stok-btn {
+    width: 36px;
+    height: 32px;
+    padding: 0;
+    font-size: 18px;
+}
+
+/* ================= MODAL ================= */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: #fff;
+    width: 450px;
+    margin: 8% auto;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.modal .close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.detail-table td {
+    padding: 6px 10px;
+}
+
+
+.btn-info {
+    background: #0dcaf0;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ===== WRAPPER KALENDER UTAMA ===== */
+.calendar-wrapper {
+    max-width: 900px;
+    margin: 30px auto;                 
+    padding: 20px 24px 28px;
+    border: 2px solid #ddd;           
+    border-radius: 20px;              
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+/* ===== HEADER HARI ===== */
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+}
+
+.calendar-header div {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* ===== GRID TANGGAL ===== */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* ===== CELL ===== */
+.day {
+    border: 1px solid #ddd;
+    min-height: 85px;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #fff;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.day:hover {
+    background: #f0f7ff;
+    border-color: #4a90e2;
+}
+
+.day.empty {
+    border: none;
+    background: transparent;
+    cursor: default;
+}
+
+.day.has-event {
+    background: #e6f4ff;
+    border: 2px solid #4a90e2;
+}
+
+.day.has-event::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #4a90e2;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+}
+
+.date-number {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* =====================
+   JUMLAH BARANG (GRID STABIL)
+===================== */
+
+/* Selalu tampilkan #jumlahBox */
+#jumlahBox {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s;
+}
+
+/* Saat disabled → abu-abu & tidak bisa interaksi */
+#jumlahBox.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Gaya tambahan untuk input disabled */
+#jumlahBox.disabled input {
+    background-color: #f5f5f5;
+    color: #888;
+    cursor: not-allowed;
+}
+

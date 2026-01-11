@@ -1,0 +1,137 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WRAPPER */
+.login-wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+/* CARD */
+.login-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* HEADER */
+.login-header {
+    background: linear-gradient(135deg, #8b0000, #000000);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.login-header .logo {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.login-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.login-header p {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+/* BODY */
+.login-body {
+    padding: 30px 25px;
+}
+
+/* INPUT GROUP */
+.input-group {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #8b0000;
+}
+
+/* HELP TEXT */
+.help-text {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* ERROR */
+.error {
+    background: #ffe6e6;
+    color: #b30000;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* BUTTON */
+.btn-login {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #8b0000, #000000);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login i {
+    margin-left: 8px;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+/* FOOTER */
+.login-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
