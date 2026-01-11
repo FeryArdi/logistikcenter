@@ -1,0 +1,78 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    min-height: 100vh;
+    background: #f5f6f8;
+}
+
+/* WRAPPER */
+.landing-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;     /* tengah horizontal */
+    align-items: flex-start;     /* mulai dari atas */
+    padding-top: 120px;          /* geser ke bawah dikit */
+    background: #f5f6f8;
+}
+
+
+/* CARD */
+
+.landing-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    max-width: 420px;
+    width: 90%;
+    text-align: center; 
+}
+
+/* TITLE */
+.landing-card h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+/* SUBTITLE */
+.subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #600000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .landing-wrapper {
+        padding: 20px;
+    }
+
+    .landing-card {
+        width: 100%;
+    }
+}
